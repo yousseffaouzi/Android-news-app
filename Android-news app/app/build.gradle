@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "fr.isep.news"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file('your keystore location.jks')
+            keyAlias 'Alias password'
+            keyPassword 'key password'
+            storePassword 'store password'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+    //For getDrawable warning
+    lintOptions {
+        ignore("UseCompatLoadingForDrawables")
+    }
+}
+
+
+dependencies {
+
+    //https://square.github.io/picasso/ Picasso - image downloading and caching library for Android
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //https://square.github.io/retrofit/   Retrofit Dependencies
+    // turn HTTP API into a Java interface
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    // JSON Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    //https://projectlombok.org/setup/android for getter and setter
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.0'
+
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.huawei.hms:ads:3.4.50.300'
+    implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
+
+
+}
+apply plugin: 'com.huawei.agconnect'

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The background when the button is normal -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The radius of the rounded corners of the rectangle -->
+    <corners android:radius="10dp" />
+    <solid android:color="#9B9B9B" />
+    <!-- The width of the rectangle's border -->
+    <stroke
+        android:width="2dp"
+        android:color="#5A5A5A"
+        />
+</shape>

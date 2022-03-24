@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "907273852735",
+    "project_id": "newsauthentication-e0c47",
+    "storage_bucket": "newsauthentication-e0c47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907273852735:android:ec9d790879ce33088ea58a",
+        "android_client_info": {
+          "package_name": "fr.isep.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907273852735-f6mmqm6d159ai7smv4q2peg95er8gooc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf485xyGVkTnQ5ewH57fZzqV-inOjRYXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907273852735-f6mmqm6d159ai7smv4q2peg95er8gooc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

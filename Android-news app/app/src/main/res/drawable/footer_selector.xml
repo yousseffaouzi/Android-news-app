@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background of Button in normal state -->
+    <item android:drawable="@drawable/footer_frame_normal" android:state_pressed="false"/>
+    <!-- The background when the Button is pressed -->
+    <item android:drawable="@drawable/footer_frame_pressed" android:state_pressed="true"/>
+</selector>
